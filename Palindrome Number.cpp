@@ -4,7 +4,8 @@ public:
         if(x<0){
             return 0;
         }
-        long int copy=x,contrast=0;
+        int copy=x;
+        long int contrast=0;
         while(x!=0){
             contrast=contrast*10 + x%10;
             x/=10;
