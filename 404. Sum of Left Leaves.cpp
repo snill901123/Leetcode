@@ -9,6 +9,11 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+/*Step 1.葉子的左右邊一定是NULL
+  Step 2.判斷一個節點有沒有左邊
+  Step 3.有的話，判斷他是不是一個葉子
+  Step 4.條件皆正確的話，把葉子的值給sum，並加上節點左邊和右邊回傳
+*/
 class Solution {
 public:
     int sumOfLeftLeaves(TreeNode* root) {
